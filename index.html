@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>रील सेवर – Instagram वीडियो, ऑडियो और फोटो डाउनलोड</title>
+<meta name="description" content="Instagram का लिंक पेस्ट करें और वीडियो, ऑडियो या फोटो डाउनलोड करें।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#EEF2F7">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>लिंक चिपकाओ,<br>फ़ाइल उठाओ।</h1>
+    <p class="lead">Instagram रील, वीडियो या पोस्ट का लिंक नीचे डालें। वीडियो, ऑडियो और फोटो अलग-अलग डाउनलोड करें।</p>
+  </header>
+
+  <section class="box" aria-label="लिंक डालें">
+    <label for="url" class="sr">Instagram लिंक</label>
+    <div class="field">
+      <input id="url" type="url" inputmode="url" autocomplete="off" placeholder="https://www.instagram.com/reel/...">
+      <button id="paste" type="button" class="ghost">पेस्ट करें</button>
+    </div>
+    <button id="go" type="button" class="primary">लिंक खोजें</button>
+    <p id="msg" role="status" aria-live="polite"></p>
+  </section>
+
+  <section id="results" class="results" aria-live="polite"></section>
+
+  <footer>
+    <p>सिर्फ़ अपना कंटेंट, या जिसकी इजाज़त आपके पास है, वही डाउनलोड करें। दूसरों के वीडियो की कॉपीराइट उनके क्रिएटर के पास रहती है। यह साइट Instagram से जुड़ी नहीं है।</p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
